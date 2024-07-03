@@ -1,1 +1,168 @@
-/* css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* ,html ,body {
+    margin: 0%;
+    padding: 0%;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #071952;
+    color: #ffffff;
+}
+
+
+.icon-logo {
+    border-radius: 50%;
+    width: 70px; height: 70px;
+}
+
+
+/* .fContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #071952
+} */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: #088395
+}
+
+
+.kanan {
+    display: flex;
+    margin: 25px;
+    background-color: #071952;
+    border-radius: 10px;
+}
+
+.kanan>a {
+    padding: 15px;
+    color: #dae4e6f5;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.kanan>a:hover,
+.kanan>a.active {
+    color: #00a6ff;
+    transition: ease-in-out .2s;
+}
+
+.kiri {
+    padding: 20px;
+}
+
+.Tengah {
+    color: #071952;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    
+}
+
+.Home {
+    display: flex;
+    align-items: center;
+    height: 590px;
+    padding: 0 10%;
+}
+
+.posisi {
+    
+    position: absolute;
+    top: -43.5px;
+    left: 0px;
+
+}
+
+.Home-content {
+    max-width: 600px;
+    position: absolute;
+    top: 230px;
+    left: 500px;
+
+
+}
+
+.Home-content>h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Home-content>h3 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #088395;
+}
+
+.Home-content>p {
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+.button {
+    width: 550px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button>a {
+    text-decoration: none;
+    background-color: yellowgreen;
+    height: 35px;
+    width: 170px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #088395;
+    border-radius: 9px;
+    font-weight: 600px;
+    letter-spacing: .3px;
+}
+
+.button>a:hover {
+    color: #dae4e6f5;
+    transition: .3;
+    background-color: black;
+}
+
+
+.container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #088395;
+}
+
+.gambar{
+    display: flex;
+    height: 590px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar1 {
+    height: 80px;
+    width: auto;
+}
+
+.Fcontac{
+    height: 670px;
+    width: 100%;
+}
