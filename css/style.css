@@ -124,22 +124,21 @@ body {
 
 .button>a {
     text-decoration: none;
-    background-color: yellowgreen;
+    background-color: #088395;
     height: 35px;
     width: 170px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px #088395;
     border-radius: 9px;
     font-weight: 600px;
-    letter-spacing: .3px;
+    letter-spacing: .5px;
 }
 
 .button>a:hover {
     color: #dae4e6f5;
-    transition: .3;
-    background-color: black;
+    transition: .5;
+    background-color: #0eabc3;
 }
 
 
@@ -168,12 +167,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 40px;
+    padding: 10px;
 }
 
 .gambar1:hover{
     height: 300px;
     width: auto;
+    transition: 10;
 }
 .gambar2:hover{
     height: 300px;
@@ -181,13 +182,15 @@ body {
 }
 
 .gambar2 {
-    border-radius: 20px;
+    border-radius: 40px;
     height: 250px;
     width: auto;
     /* margin: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+
 }
 
 
