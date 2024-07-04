@@ -5,6 +5,7 @@
     padding: 0%;
     font-style: normal;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,12 +20,13 @@ body {
 }
 
 
-/* .fContainer {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    background-color: #071952
-} */
+.fContainer {
+    position: -webkit-sticky; 
+    position: sticky ;
+    top: 0;
+    /* display: flex;
+    justify-content: center; */
+}
 
 .wrapper {
     display: flex;
@@ -32,7 +34,8 @@ body {
     align-items: center;
     height: 75px;
     width: 100%;
-    background-color: #088395
+    background-color: #088395 
+    
 }
 
 
@@ -41,6 +44,8 @@ body {
     margin: 25px;
     background-color: #071952;
     border-radius: 10px;
+
+    
 }
 
 .kanan>a {
@@ -51,8 +56,8 @@ body {
     font-weight: 500;
 }
 
-.kanan>a:hover,
-.kanan>a.active {
+.kanan>a:hover
+/* .kanan>a.active */ {
     color: #00a6ff;
     transition: ease-in-out .2s;
 }
@@ -61,14 +66,12 @@ body {
     padding: 20px;
 }
 
-.Tengah {
+/* .Tengah {
     color: #071952;
     display: flex;
-    justify-content: space-between;
     padding: 20px;
-    background-color: #ffffff;
-    
-}
+
+}  */
 
 .Home {
     display: flex;
@@ -147,6 +150,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #088395;
+
 }
 
 .gambar{
@@ -158,11 +162,105 @@ body {
 }
 
 .gambar1 {
-    height: 80px;
+    height: 250px;
+    width: auto;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.gambar1:hover{
+    height: 300px;
+    width: auto;
+}
+.gambar2:hover{
+    height: 300px;
     width: auto;
 }
 
-.Fcontac{
-    height: 670px;
-    width: 100%;
+.gambar2 {
+    border-radius: 20px;
+    height: 250px;
+    width: auto;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+
+.containerr {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around
+        
+}
+        
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #088395;
+        }
+        
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 95%;
+        }
+        
+button {
+    background-color: #088395;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+        }
+        
+button:hover {
+    background-color: #0056b3;
+        }
+        
+.output-container {
+     width: 400px;
+    height: 480px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+        
+.output-item {
+    margin-bottom: 10px;
+}
+        
+.output-item label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+.outputt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-container{
+        color: #088395;
+}
+

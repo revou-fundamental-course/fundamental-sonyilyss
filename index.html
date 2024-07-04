@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>My portfolio</title>
 </head>
 
 <body>   
-    <section class="fContainer">  <!--(full container) -->
+    <section class="fContainer" id="navbar">  <!--(full container) -->
             <nav class="wrapper">
                 <div class="kiri">
                     <img class= "icon-logo" src="asset/PP Grup.png" alt="gambar koma">
                 </div>
-                <div class="Tengah">
+                <!-- <div class="Tengah">
                     Sony ilyas
-                </div>
+                </div> -->
                 <div class="kanan">
-                    <a href="/" class="active">Home</a>
-                    <a href="/">My profile</a>
-                    <a href="/">portfolio</a>
-                    <a href="/">Mesagge us</a>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#my profile">My profile</a>
+                    <a href="#portfolio1">portfolio</a>
+                    <a href="#mesagge us">Mesagge us</a>
                 </div>
             </nav>
     </section>
 
-    <section class="Home">
+    <section class="Home" id="home" >
         <img class="posisi"src="asset/anjy.png" alt="aden">
         <div class="Home-content">
             <h1>Sony ilyas</h1>
@@ -37,60 +38,56 @@
                  menarik dan detail.
             </p>
             <div class="button">
-                <a href="/">Hire me</a>
-                <a href="/">Look at my portfolio</a>
-                <a href="/">Contac me</a>
+                <a href="#mesagge uss">Hire me</a>
+                <a href="#portfolio2">Look at my portfolio</a>
+                <a href="#mesagge usss">Contac me</a>
             </div>
         </div>
-        <div ></div>
-    </section>
-        
-    <header class="container">
-        <h1>MY PORTFOLIO</h1>
-    </header>
-    <section class="gambar">  
-        <p>
-            <img class="gambar1" src=asset/einvorment.png alt="/">
-            <img class="gambar1" src="asset/im.png" alt="/">
-        </p>
-        <p>
-            <img class="gambar1" src="asset/laila im2 .png" alt="/">
-            <img class="gambar1" src="asset/lowpoly taman.png" alt="/">
-        </p>
     </section>
 
-    <section>
-        <div class="Fcontac">
-            anjay
-        <table>
-        <tr>
-        <td>Nama</td>
-        <td>:</td>
-        <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>Umur</td>
-            <td>:</td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>Jenis kelamin</td>
-            <td>:</td>
-            <td><input type="radio">Laki laki</td>
-            <td><input type="radio">Perempuan</td>
-        </tr>
-        <tr>
-            <td>Tanggal lahir</td>
-            <td>:</td>
-            <td><input type="date"></td>
-        </tr>
-        <tr>
-            <td>Password</td>
-            <td>:</td>
-            <td><input type="password" name="Password"></td>
-        </tr>
-    </table>
+    <section id="portfolio1">
+        <header class="container" id="portfolio2">
+            <h1>MY PORTFOLIO</h1>
+        </header>
+        <div class="gambar"> 
+            <p>
+                <img class="gambar1" src=asset/einvorment.png alt="/">
+                <img class="gambar1" src="asset/im.png" alt="/">
+            </p>
+            <p>
+                <img class="gambar2" src="asset/laila im2 .png" alt="/">
+                <img class="gambar2" src="asset/lowpoly taman.png" alt="/">
+            </p>
         </div>
     </section>
+
+
+    <div class="containerr" id="mesagge us">
+        <form id="myForm">
+            <label for="name" id="mesagge usss">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age" id="mesagge uss">Age</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" id="submit">Submit</button>
+        </form>
+        <section>
+            <h2 class="outputt">Output</h2>
+        <div class="output-container" id="output"></div>
+        </section>
+    </div>
+
+    
+
 </body>
 </html>
