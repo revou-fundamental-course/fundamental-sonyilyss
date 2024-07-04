@@ -24,6 +24,7 @@ body {
     position: -webkit-sticky; 
     position: sticky ;
     top: 0;
+    z-index: calc(100);
     /* display: flex;
     justify-content: center; */
 }
@@ -34,8 +35,7 @@ body {
     align-items: center;
     height: 75px;
     width: 100%;
-    background-color: #088395 
-    
+    background-color: #088395;
 }
 
 
